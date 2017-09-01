@@ -1,0 +1,19 @@
+{
+  "name": "fcc-request-header-parser-microservice",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "git@github.com:greg-harrison/fcc-request-header-parser-microservice.git",
+  "author": "Greg <harrison.greg.c@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
