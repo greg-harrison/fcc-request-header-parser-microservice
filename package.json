@@ -7,6 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.4",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4",
     "pug": "^2.0.0-rc.3"
   },
   "devDependencies": {
@@ -14,6 +16,13 @@
     "nodemon": "^1.11.0"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+        "prettier --write",
+        "git add"
+    ]
   }
 }
